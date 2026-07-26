@@ -1,0 +1,32 @@
+{
+  "name": "screenshotting-gui",
+  "version": "1.0.0",
+  "description": "Capture clean, repeatable screenshots of a GUI desktop app (Cursor, IDEs, browsers) on an isolated Xvfb display: drive it with python-Xlib (XTEST), capture with ImageMagick, annotate with a highlight box, crop or arrow. For docs, courses and bug reports; never touches the operator's live :0 desktop.",
+  "author": {
+    "name": "Pavel Rykov",
+    "email": "paul@drteam.rocks",
+    "url": "https://t.me/evilfreelancer"
+  },
+  "homepage": "https://github.com/EvilFreelancer/screenshotting-gui",
+  "repository": "https://github.com/EvilFreelancer/screenshotting-gui",
+  "license": "MIT",
+  "keywords": [
+    "screenshots",
+    "gui",
+    "xvfb",
+    "xlib",
+    "xtest",
+    "imagemagick",
+    "cursor",
+    "automation",
+    "documentation"
+  ],
+  "skills": "./",
+  "interface": {
+    "displayName": "screenshotting-gui",
+    "shortDescription": "Screenshot GUI apps on an isolated Xvfb display, drive with python-Xlib, annotate with ImageMagick.",
+    "developerName": "Pavel Rykov",
+    "category": "Developer Tools",
+    "websiteURL": "https://github.com/EvilFreelancer/screenshotting-gui"
+  }
+}
