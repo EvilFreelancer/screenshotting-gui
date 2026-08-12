@@ -49,6 +49,22 @@ subagent that is told the `:99`-only rule. Keep test artifacts out of the repo.
 
 Bump `version` in `SKILL.md` **and** all three manifests together, keep the
 `description` identical across the manifests, then mirror the change into the
-`rpa-skills` catalog (both marketplace manifests, the README Skills table, and
-`install.sh`) per that repo's `AGENTS.md`. Run `python3 -m py_compile scripts/*.py`
-before committing.
+`rpa-skills` catalog per that repo's `AGENTS.md`. Run
+`python3 -m py_compile scripts/*.py` before committing.
+
+### Catalog mirror is mandatory
+
+The catalog keeps its **own copy** of this skill's `version` and `description`, and
+it **follows, never leads** - release here first, then update it in the same session.
+Whenever `version` or `description` changes here:
+
+1. `.claude-plugin/marketplace.json` (catalog) - in the `screenshotting-gui` entry
+   set `version` to the new number and refresh `description` if it changed.
+2. `.agents/plugins/marketplace.json` (catalog, Codex) - no per-plugin `version`
+   there; the entry points at `ref: main`, so the version follows by itself. Refresh
+   `description` if it changed, and the `ref` only when the entry pins a tag or a sha.
+3. Top-level `metadata.version` in **both** catalog manifests - bump the **patch**
+   level on every mirrored skill release (`2.2.0` -> `2.2.1`), and keep the two
+   manifests identical. A skill added, removed, or renamed takes a minor bump instead.
+4. `README.md` (catalog) - the Skills-table row, only when the purpose or the
+   description changed. `install.sh` changes only when the repo name changes.
