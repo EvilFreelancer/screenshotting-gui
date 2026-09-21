@@ -1,6 +1,7 @@
 ---
 name: screenshotting-gui
-version: 1.0.0
+metadata:
+  version: 1.0.0
 description: >
   Use when you must produce clean, repeatable screenshots of a running GUI desktop
   application (an IDE like Cursor or VS Code, a native app, a browser window) for
