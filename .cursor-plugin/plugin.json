@@ -1,7 +1,7 @@
 {
   "name": "screenshotting-gui",
   "displayName": "screenshotting-gui",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Capture clean, repeatable screenshots of a GUI desktop app (Cursor, IDEs, browsers) on an isolated Xvfb display: drive it with python-Xlib (XTEST), capture with ImageMagick, annotate with a highlight box, crop or arrow. For docs, courses and bug reports; never touches the operator's live :0 desktop.",
   "author": {
     "name": "Pavel Rykov",
