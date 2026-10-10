@@ -61,6 +61,14 @@ Kimi Code CLI, and others).
 /plugin install screenshotting-gui@rpa-skills
 ```
 
+**In Coddy**: the rpa-skills catalog is built into [Coddy](https://coddy.dev) as a system source,
+so there is nothing to connect. One sync installs this skill together with the rest of the collection
+into `~/.coddy/skills/screenshotting-gui/` and keeps it up to date (or press **Sync all** in Settings → Skills):
+
+```bash
+coddy skills sync
+```
+
 **As a plain skill folder** — copy or symlink this repository into a skill root (its
 `SKILL.md` lives at the repo root):
 
@@ -70,6 +78,7 @@ Kimi Code CLI, and others).
 | Cursor        | `~/.cursor/skills/screenshotting-gui/` |
 | OpenAI Codex  | `~/.codex/skills/screenshotting-gui/`  |
 | Kimi Code CLI | `~/.kimi/skills/screenshotting-gui/`   |
+| Coddy         | `~/.coddy/skills/screenshotting-gui/`  |
 
 The directory name must match the `name` field in `SKILL.md`.
 
