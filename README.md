@@ -74,11 +74,11 @@ coddy skills sync
 
 | Tool          | Path                                        |
 |---------------|---------------------------------------------|
+| Coddy         | `~/.coddy/skills/screenshotting-gui/`  |
 | Claude Code   | `~/.claude/skills/screenshotting-gui/` |
 | Cursor        | `~/.cursor/skills/screenshotting-gui/` |
 | OpenAI Codex  | `~/.codex/skills/screenshotting-gui/`  |
 | Kimi Code CLI | `~/.kimi/skills/screenshotting-gui/`   |
-| Coddy         | `~/.coddy/skills/screenshotting-gui/`  |
 
 The directory name must match the `name` field in `SKILL.md`.
 
